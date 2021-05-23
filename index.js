@@ -36,7 +36,7 @@ client.connect((err) => {
     });
   });
 
-  //db get all products
+  //db get all products database
 
   app.get("/products", (req, res) => {
     productsCollection.find({}).toArray((err, documents) => {
